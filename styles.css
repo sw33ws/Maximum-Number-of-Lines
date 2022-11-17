@@ -1,0 +1,33 @@
+:root {
+    --background: rgb(32, 45, 49);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* font-family: "Balsamiq Sans", cursive; */
+    background: var(--background);
+    color: rgb(200, 200, 200);
+    padding: 5rem;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: rgb(42, 55, 59);
+    padding: 1rem;
+}
+
+.text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
